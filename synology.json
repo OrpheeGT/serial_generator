@@ -1,5 +1,8 @@
 [
-	{ "model": "DS3615xs", "permanent": "LW" },
-	{ "model": "DS3617xs", "permanent": "OD" },
-	{ "model": "DS916+", "permanent": "NZ" }
+        { "model": "DS3615xs", "permanent": "LWN" },
+        { "model": "DS3617xs", "permanent": "ODN" },
+        { "model": "DS916+", "permanent": "NZN" },
+        { "model": "DS918+", "permanent": "PDN" },
+        { "model": "DS920+", "permanent": "SBR" },
+        { "model": "DVA3221", "permanent": "SJR" }
 ]
