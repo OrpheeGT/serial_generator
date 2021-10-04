@@ -4,5 +4,6 @@
         { "model": "DS916+", "permanent": "NZN" },
         { "model": "DS918+", "permanent": "PDN" },
         { "model": "DS920+", "permanent": "SBR" },
+        { "model": "DS3219", "permanent": "RFR" },
         { "model": "DVA3221", "permanent": "SJR" }
 ]
