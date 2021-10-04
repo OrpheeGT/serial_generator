@@ -21,10 +21,32 @@ function generateMac() {
 }
 
 function generateSerial(permanent) {
-    if(permanent == "Select model")
+    if(permanent == "Select model") {
         return "Please select a model first!";
+    }
+    if (permanent == "SJR" || permanent == "SBR") {
+        var beginArray = [
+            "2030",
+            "2040",
+            "2150"
+        ];
 
-    return (random(11,14) + "30" + permanent + "n0" + random(0,2) + padLeft(random(1,9999),4)).toUpperCase();
+        return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + generateRandomLetter() + generateRandomValue() + generateRandomValue() + generateRandomLetter() + generateRandomValue() + generateRandomLetter()).toUpperCase();
+    }
+    else if (permanent == "PDN") {
+        var beginArray = [
+            "1780",
+            "1790",
+            "1860"
+        ];
+
+       return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + "0" + random(0,2) + padLeft(random(1,9999),4)).toUpperCase();
+
+    }
+    else {
+        return (random(11,14) + "30" + permanent + "0" + random(0,2) + padLeft(random(1,9999),4)).toUpperCase();
+    }
+
 }
 
 function padLeft(nr, n) {
@@ -35,4 +57,16 @@ function random(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function generateRandomLetter() {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+  return alphabet[Math.floor(Math.random() * alphabet.length)]
+}
+
+function generateRandomValue() {
+  const alphabet = "0123456789abcdefghijklmnopqrstuvwxyz"
+
+  return alphabet[Math.floor(Math.random() * alphabet.length)]
 }
