@@ -68,13 +68,13 @@ function random(min, max) {
 }
 
 function generateRandomLetter() {
-  const alphabet = "abcdefghijklmnopqrstuvwxyz"
+  const alphabet = "abcdefghjklmnpqrstvwxyz"
 
   return alphabet[Math.floor(Math.random() * alphabet.length)]
 }
 
 function generateRandomValue() {
-  const alphabet = "0123456789abcdefghijklmnopqrstuvwxyz"
+  const alphabet = "0123456789abcdefghjklmnpqrstvwxyz"
 
   return alphabet[Math.floor(Math.random() * alphabet.length)]
 }
