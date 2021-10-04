@@ -31,7 +31,7 @@ function generateSerial(permanent) {
             "2150"
         ];
 
-        return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + generateRandomLetter() + generateRandomValue() + generateRandomValue() + generateRandomLetter() + generateRandomValue() + generateRandomLetter()).toUpperCase();
+        return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + generateRandomLetter() + generateRandomValue() + generateRandomValue() + generateRandomValue() + generateRandomValue() + generateRandomLetter()).toUpperCase();
     }
     else if (permanent == "PDN") {
         var beginArray = [
