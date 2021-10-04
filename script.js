@@ -33,6 +33,14 @@ function generateSerial(permanent) {
 
         return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + generateRandomLetter() + generateRandomValue() + generateRandomValue() + generateRandomValue() + generateRandomValue() + generateRandomLetter()).toUpperCase();
     }
+    else if (permanent == "RFR") {
+        var beginArray = [
+            "1930",
+            "1940"
+        ];
+        
+        return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + generateRandomLetter() + generateRandomValue() + generateRandomValue() + generateRandomValue() + generateRandomValue() + generateRandomLetter()).toUpperCase();
+    }
     else if (permanent == "PDN") {
         var beginArray = [
             "1780",
@@ -40,7 +48,7 @@ function generateSerial(permanent) {
             "1860"
         ];
 
-       return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + "0" + random(0,2) + padLeft(random(1,9999),4)).toUpperCase();
+        return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + "0" + random(0,2) + padLeft(random(1,9999),4)).toUpperCase();
 
     }
     else {
