@@ -4,7 +4,7 @@ $(function () {
         $("#sn").val(generateSerial($("#model").val()));
     });
    
-	$("#generate").click(function () {
+    $("#generate").click(function () {
         $("#mac").val(generateMac($("#model").val()));
     });
     
@@ -20,7 +20,7 @@ $(function () {
 
 });
 
-function generateMac() {
+function generateMac(permanent) {
     if(permanent == "mac")
         return "Please select a model first!";
     return "001132" + random(10, 16777215).toString(16).toUpperCase();
