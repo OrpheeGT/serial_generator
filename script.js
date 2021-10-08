@@ -3,7 +3,11 @@ $(function () {
     $("#generate").click(function () {
         $("#sn").val(generateSerial($("#model").val()));
     });
-
+   
+	$("#generate").click(function () {
+        $("#mac").val(generateMac($("#model").val()));
+    });
+    
     $.getJSON("synology.json", function(json) {
 
         $("#model").empty();
@@ -17,6 +21,8 @@ $(function () {
 });
 
 function generateMac() {
+    if(permanent == "mac")
+        return "Please select a model first!";
     return "001132" + random(10, 16777215).toString(16).toUpperCase();
 }
 
