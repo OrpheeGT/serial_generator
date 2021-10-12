@@ -23,7 +23,7 @@ $(function () {
 function generateMac(permanent) {
     if(permanent == "Select model")
         return "Please select a model first!";
-    return "001132" + random(10, 16777215).toString(16).toUpperCase();
+    return "001132" + random(1048576, 16777215).toString(16).toUpperCase();
 }
 
 function generateSerial(permanent) {
