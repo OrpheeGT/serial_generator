@@ -55,11 +55,11 @@ function generateSerial(permanent) {
             "1860"
         ];
 
-        return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + "0" + random(0,2) + padLeft(random(1,9999),4)).toUpperCase();
+        return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + padLeft(random(1,030000),6)).toUpperCase();
 
     }
     else {
-        return (random(11,14) + "30" + permanent + "0" + random(0,2) + padLeft(random(1,9999),4)).toUpperCase();
+        return (random(11,14) + "30" + permanent + padLeft(random(1,030000),6)).toUpperCase();
     }
 
 }
