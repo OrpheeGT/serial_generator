@@ -52,7 +52,8 @@ function generateSerial(permanent) {
         var beginArray = [
             "1780",
             "1790",
-            "1860"
+            "1860",
+            "1980"
         ];
 
         return (beginArray[Math.floor(Math.random()*beginArray.length)] + permanent + padLeft(random(1,030000),6)).toUpperCase();
